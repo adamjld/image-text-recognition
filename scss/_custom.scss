@@ -1,0 +1,53 @@
+// Here you can add other styles
+
+.dropzone-container{
+    width: 400px;
+    height: 200px;
+    border-width: 2px;
+    border-color: rgb(102, 102, 102);
+    border-style: dashed;
+    border-radius: 5px;
+    margin: 0 auto 1rem;
+    cursor: pointer;
+    
+    .dropzone-inner{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+
+        .dropzone-icon{
+            font-size: 5rem;
+            opacity: 0.5;
+            width: 100%;
+        }
+        
+        &:hover{
+            .dropzone-icon{
+                opacity: 0.75;
+            }
+        }
+        
+        .dropzone-text{
+            padding-top: 1rem;
+            font-size: 1rem;
+            font-weight: 100;
+        }
+    }
+}
+
+.loading-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.66);
+    
+    &.active{
+        display: block;
+    }
+}
